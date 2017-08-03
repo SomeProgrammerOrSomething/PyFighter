@@ -7,7 +7,7 @@ To play the game, you'll need to make use of the character file and the main gam
 
 Basically, if you store them in the same directory and then just use python to run the main game file, it should play.
 
-Feel free to loo over the souce code.
+Feel free to look over the source code.
 
 PyFighter Goals:
 
