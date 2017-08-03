@@ -12,8 +12,13 @@ Feel free to look over the source code.
 PyFighter Goals:
 
 Add Network Capability
+
 Add Audio
+
 Add a GUI
+
 Add Character Sprites
+
 Add More Characters
+
 Basic Balancing
