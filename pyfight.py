@@ -13,7 +13,7 @@ class Game(object):
     game_mode = '' # Preallocation
     game_mode_choice = '' # Preallocation and Stroage
 
-    character_options = {'1':Berserker, '2':Yogi, '3':Trickster2}
+    character_options = {'1':Berserker, '2':Philosopher, '3':Trickster2}
     move_order = '' # Preallocation
 
     def __init__(self):
@@ -59,7 +59,7 @@ class Game(object):
         while True:
             character_choice = raw_input("Who should " + self.game_mode[controller_index] + " play as:\
                 \n1) The Berserker\
-                \n2) The Yogi\
+                \n2) The Philosopher\
                 \n3) The Trickster\
                 \n4) Random\
                 \n\
