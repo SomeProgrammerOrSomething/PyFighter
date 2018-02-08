@@ -12,7 +12,7 @@ class Game(object):
     game_mode = '' # Preallocation
     game_mode_choice = '' # Preallocation and Stroage
 
-    character_options = {'1':Berserker, '2':Yogi, '3':Trickster2}
+    character_options = {'1':Berserker, '2':Philosopher, '3':Trickster2}
     move_order = '' # Preallocation
 
     def __init__(self):
@@ -58,9 +58,9 @@ class Game(object):
     def character_selection(self,controller_index):
         while True:
             character_choice = raw_input(self.game_mode[controller_index] + " li wile kepeken:\
-                \n1) jan pi utala pakala\
-                \n2) jan pi utala sewi\
-                \n3) jan pi utala nasa\
+                \n1) jan pi pakala nasa\
+                \n2) jan pi sona mute\
+                \n3) jan pi powe nasa\
                 \n4) nasin pi sona ala\
                 \n\
                 \n0) tawa.\n\n")
@@ -82,7 +82,7 @@ class Game(object):
         if controller_1.base_hp <= 0:
             if controller_2.base_hp >0:
                 self.clear_screen
-                print "jan 2 li kama suli!"
+                print "jan 2 li kama sewi!"
                 sys.exit()
             else:
                 self.clear_screen
@@ -90,7 +90,7 @@ class Game(object):
                 sys.exit()
         elif controller_2.base_hp <= 0:
             self.clear_screen
-            print "jan 1 li kama suli!"
+            print "jan 1 li kama sewi!"
             sys.exit()
         else:
             pass
