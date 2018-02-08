@@ -55,15 +55,15 @@ class Berserker(Character):
                           "3": Move(" PumpUp - Normal speed. Improves the Mindset of the User ( x 1.25 )",
                                     mindset_multiplier=1.25)}
 
-class Yogi(Character):
+class Philosopher(Character):
 
     def __init__(self):
-        Character.__init__(self, "Yogi", 220, 80)
-        self.move_pool = {"1": Move(" Sukha - A Normal speed move. Restores up to a Base of 30 HP to User",
+        Character.__init__(self, "Philosopher", 220, 80)
+        self.move_pool = {"1": Move(" Insight - A Normal speed move. Restores up to a Base of 30 HP to User",
                                     self_damage=-30),
-                          "2": Move(" Dukha - A Normal-speed attack. Does 40 Base Damage to the Opponent",
+                          "2": Move(" Pedantry - A Normal-speed attack. Does 40 Base Damage to the Opponent",
                                     damage=40),
-                          "3": Move(" Meditate - A Normal-speed move. Improves the Mindset of the User (x 1.35)",
+                          "3": Move(" Research - A Normal-speed move. Improves the Mindset of the User (x 1.35)",
                                     mindset_multiplier=1.35)}
 
 class Trickster2(Character):
