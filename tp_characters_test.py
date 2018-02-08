@@ -47,23 +47,23 @@ class Move(object):
 class Berserker(Character):
 
     def __init__(self):
-        Character.__init__(self, "jan pi utala pakala", 250, 75)
-        self.move_pool = {"1": Move(" utala luka lili - tenpo lili la, ona li pakala 30 e jan ante.",
+        Character.__init__(self, "jan pi pakala nasa", 250, 75)
+        self.move_pool = {"1": Move(" utala lili luka - tenpo lili la, ona li pakala 30 e jan ante.",
                                     damage=30, priority="Fast"),
-                          "2": Move(" utala sijelo - tenpo suli la, ona li pakala e sijelo 50 pi jan ante li pakala e sijelo 30 pi ona.",
+                          "2": Move(" utala sijelo - tenpo suli la, ona li pakala 50 e jan ante li pakala 30 e sijelo sama",
                                     self_damage=30, damage=50, priority="Slow"),
-                          "3": Move(" wawa - sona ona li kama suli ( x 1.25 ).",
+                          "3": Move(" wawa sewi - wawa sama li kama sewi ( x 1.25 ).",
                                     mindset_multiplier=1.25)}
 
-class Yogi(Character):
+class Philosopher(Character):
 
     def __init__(self):
-        Character.__init__(self, "jan pi utala sewi", 220, 80)
-        self.move_pool = {"1": Move(" pona - tenpo suli ala la, tenpo lili la, ona li pona e sijelo 30 pi ona.",
+        Character.__init__(self, "jan pi sona mute", 220, 80)
+        self.move_pool = {"1": Move(" sona pona - ona li pona 30 e sijelo sama",
                                     self_damage=-30),
-                          "2": Move(" ike - ona li pakala e sijelo 40 pi jan ante.",
+                          "2": Move(" toki mute pi ike mute - ona li pakala 40 e jan ante.",
                                     damage=40),
-                          "3": Move(" kama sona wawa - ona li pona a sona pi ona. (x 1.35)",
+                          "3": Move(" sona sewi - sona ona li kama sewi. (x 1.35)",
                                     mindset_multiplier=1.35)}
 
 class Trickster2(Character):
@@ -83,8 +83,8 @@ class Trickster2(Character):
             user.MAX_hp, opponent.MAX_hp = opponent.MAX_hp, user.MAX_hp
 
     def __init__(self):
-        Character.__init__(self, "jan pi utala nasa", 175, 100)
-        self.move_pool = {"1": Trickster2.Bag_o_tricks(" nasin nasa - ona pona anu ike e sijelo 0-100 pi jan ante e sijelo 0-50 pi ona sama."),
-                          "2": Move(" ike nasa - ona ike e lawa pi jan ante (x 0.8) li pona e lawa ona (x 1.05)",
+        Character.__init__(self, "jan pi powe nasa", 175, 100)
+        self.move_pool = {"1": Trickster2.Bag_o_tricks(" nasin nasa - ona li ante e [-100,100] pi jan ante e [-50,50] pi jan sama."),
+                          "2": Move(" ike nasa - ona li ike e lawa pi jan ante (x 0.8) li pona e lawa sama (x 1.05)",
                                     mindset_multiplier=1.05, opponent_mindset_multiplier=0.8),
-                          "3": Trickster2.Swapper(" sijelo ante - ona ante sama sijelo pi jan ante kepeken sijelo ona.")}
+                          "3": Trickster2.Swapper(" sijelo ante - ona li ante sama e sijelo pi jan ante e sijelo pi jan sama.")}
